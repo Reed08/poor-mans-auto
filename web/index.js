@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-const fileContent = fs.readFileSync('../PoorMansAuto.java', 'utf-8');
+const fileContent = fs.readFileSync('PoorMansAuto.java', 'utf-8');
 
 app.get('/', (req, res) => {
 	res.send(`
